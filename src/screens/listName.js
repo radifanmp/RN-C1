@@ -1,23 +1,19 @@
-import React from 'react';
-import {View} from 'react-native';
+import React from "react";
+import { View, TouchableOpacity, Text } from "react-native";
 
 //Import Component
-import Greeting from '../components/Greeting'
-import Header from '../components/Headers'
+import Greeting from "../components/Greeting";
+import Header from "../components/Headers";
 
 const ListName = () => {
-    return(
-        <View 
-        style={{
-            marginTop: 50
-        }}>
+  return (
+    <View style={{ marginTop: 50 }}>
+      <Header title="ListName" />
+      <Greeting name="Diaz" />
+      <Greeting name="Rezaldi" />
+      <Greeting name="Irham" />
+    </View>
+  );
+};
 
-            <Header title = "Props" />
-            <Greeting name="Diaz" />
-            <Greeting name="Rezaldi" />
-            <Greeting name="Irham" />
-        </View>
-    )
-}
-
-export default ListName
+export default ListName;
